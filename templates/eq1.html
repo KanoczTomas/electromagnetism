@@ -1,54 +1,76 @@
-<div class="well">
+<div class="jumbotron">
   <p class="text-center"><equation math="`oint_S vecE*dvecS = Q/epsilon_0`"></equation></p>
 </div>
 
 <p>Prva rovnica hovori o tom, ze elektricke pole je zriedlove a zriedlom pola je naboj ... bla bla bla :) Ale co to vlastne znamena? No najprv musim odbocit malicko a vysvetlit si jednotlive pojmy v tomto vzorci - len tak, pre istotu, aby sme boli na tej istej "vlne".</p>
 
 <h1>Zakladne pojmy</h1>
-<hr></hr>
+
 <h2>Skalar</h2>
+<p>Skalarom volame nieco co sa da jednoznacne urcit jednym cislom. Napriklad cas, hmotnost, teplota su fajn priklady. Cize ak mame skalarnu velicinu napriklad teplotu, tak ak chcem vediet teplotu v danom bode, tak mi uplne staci jedno cislo a mam vystarane. Skalarnym polom nazyvame nieco co je v kazdom bode popisane jednym cislom. Prestavme si izbu, kde v kazdom bode mam malilinky teplomer. Ten teplomer nam presne urcuje teplotu v kazdom bode miestnosti a teda mozeme hovorit o skalarnom poli, alebo o skalarnej funkcii, resp. skalarnej velicine:</p>
 <div class="jumbotron">
-  <p>Skalarom volame nieco co sa da jednoznacne urcit jednym cislom. Napriklad cas, hmotnost, teplota su fajn priklady. Cize ak mame skalarnu velicinu napriklad teplotu, tak ak chcem vediet teplotu v danom bode, tak mi uplne staci jedno cislo a mam vystarane. Skalarnym polom nazyvame nieco co je v kazdom bode popisane jednym cislom. Prestavme si izbu, kde v kazdom bode mam malilinky teplomer. Ten teplomer nam presne urcuje teplotu v kazdom bode miestnosti a teda mozeme hovorit o skalarnom poli, alebo o skalarnej funkcii, resp. skalarnej velicine:
-<p class="text-center"> <equation math="`varphi(x,y,z) = n`"></equation></p>
+    <p class="text-center"> <equation math="`varphi(x,y,z) = n`"></equation></p>
+</div>
 <p>, kde <equation math="`n`"></equation> je realne cislo. <p>
 <p>Ak <equation math="`varphi`"></equation> je teplota, tak to citame takto: Teplota <equation math="`varphi`"></equation> v bode <equation math="`(x,y,z)`"></equation> je rovna <equation math="`n`"></equation>.
 <div class="alert alert-info">
   <p>Treba si vsimnut, ze <equation math="`varphi`"></equation> nema nad sebou ziaden symbol <equation math="`rarr`"></equation>, ani nie je pisany <strong>tucnym pismom</strong>. Toto je dolezite postrehnut, aby sme si ho nezamenili s inym zvieratom, vektorom!</p>
 </div>
-</div>
+
 <h2>Vektor</h2>
-<div class="jumbotron">
-<p>
-  Ako som uz bol spominal, tak vektor to je take ine zviera. Zviera ma aj hmostnost, ale sa aj ustavicne pohybuje, takze ak ho chcem chudaka ulapit, musim vediet aj to, ktorym smerom ho mam hladat :)</p>
+
+<p>Ako som uz bol spominal, tak vektor to je take ine zviera. Zviera ma aj hmostnost, ale sa aj ustavicne pohybuje, takze ak ho chcem chudaka ulapit, musim vediet aj to, ktorym smerom ho mam hladat :)</p>
 <p>No ale spat k "tvrdej" matike/fyzike. Existuje vela fyzikalnych velicin u ktorych na ich popisanie nestaci jedine cislo, musime vediet aj smer, jednoducho myslenu sipku. Dobrym prikladom je rychlost. </p>
 <p>Rychlost je vektorova velicina, asi kazdy pozna zakon (newtonovsky, nechajme relativisticke veci bokom), ktory hovori o scitavani rychlosti ak su tie rychlosti oproti sebe. Celna zraska dvoch aut s rychlost 50 a 30km/h je to iste ako narazit do steny s rychlostou 80km - au! No ale ak rychlo zaradime spiatocku a mame auto KIT, ktore riadi knigh rider (ano, zlate 90-te roky), tak dokazeme zrychlit trebars na 40km/h. V tom pripade je ten naraz ako keby sme naburali do steny s rychlostou 10km/h.</p>
-<p>
-Cize ako to je s tou rychlostou naozaj je? Raz je to scitavanie a raz je to odcitavanie? Cele zle! Vektor zachran nas!</p>
-<p>
-Predstavujem vam vektor, ako kazdy spravny vektor aj tento ma svoj smer aj velkost.
-</p>
-<img src="images/eq1/vector.svg" alt="a vector" class="img-responsive center-block">
-<p>
-Nech ma tento nas vektor velkost 5 jednotiek a ako vidime jeho smer je doprava, alebo ked si ho predstavime v dvojrozmernom kartezskom suradnicovom systeme, tak je v smere <equation math="`+x`"></equation>. Zapisali by sme ho matimaticky pre lubovolny bod so suradnicami <equation math="`(x,y)`"></equation> asi takto:
-</p>
-<p>
-  <equation math="$$\vec{v}(x,y) = 5\hat{\imath} + 0\hat{\jmath}$$"></equation>
-</p>
-<p>
-  Mozno to nevidno, ale tento zapis skryva to, ze nas vektor moze byt hoc kde v priestore, na suradniciach <equation math="`x, y`"></equation>. Cize nas vektor ak zobrazime v bode <equation math="`(0,0)`"></equation>, tak jeho velkost ani smer sa samozrejme nemeni. Zapiseme to matematicky takto:
-</p>
-<p>
-  <equation math="$$\vec{v}(0,0) = 5\hat{\imath} + 0\hat{\jmath}$$"></equation>
-</p>
-<img class="img-responsive center-block" src="images/eq1/vector_0_0_small.svg" alt="vector at coordinates (0,0)">
-<p>
-  Ak vektor posunieme hore o 2 jednotky <equation math="`y`"></equation>, tak sa nas vektor vobec nezmeni, jeho velkost aj smer ostava nezmeneny. Jedina vec, ktora sa udiala je, ze sa pohol. Zapis je nasledovny:
-</p>
-<p>
-  <equation math="$$\vec{v}(0,2) = 5\hat{\imath} + 0\hat{\jmath} $$"></equation>
-</p>
-<img class="img-responsive center-block" src="images/eq1/vector_0_2_small.svg" alt="vector at coordinates (0,2)">
-</p>
+<p>Cize ako to je s tou rychlostou naozaj je? Raz je to scitavanie a raz je to odcitavanie? Cele zle! Vektor zachran nas!</p>
+<p>Predstavujem vam vektor, ako kazdy spravny vektor aj tento ma svoj smer aj velkost.</p>
+<div class="jumbotron">
+    <img src="images/eq1/vector.svg" alt="a vector" class="img-responsive center-block">
 </div>
+<p>Nech ma tento nas vektor velkost 5 jednotiek a ako vidime jeho smer je doprava, alebo ked si ho predstavime v dvojrozmernom kartezskom suradnicovom systeme, tak je v smere <equation math="`+x`"></equation>. Zapisali by sme ho matimaticky pre lubovolny bod so suradnicami <equation math="`(x,y)`"></equation> asi takto:</p>
+<div class="jumbotron">
+  <equation math="$$\vec{v}(x,y) = 5\hat{\imath} + 0\hat{\jmath}$$"></equation>
+</div>
+<p>  Mozno to nevidno, ale tento zapis skryva to, ze nas vektor moze byt hoc kde v priestore, na suradniciach <equation math="`x, y`"></equation>. Cize nas vektor ak zobrazime v bode <equation math="`(0,0)`"></equation>, tak jeho velkost ani smer sa samozrejme nemeni. Zapiseme to matematicky takto:</p>
+<div class="jumbotron">
+  <equation math="$$\vec{v}(0,0) = 5\hat{\imath} + 0\hat{\jmath}$$"></equation>
+</div>
+<p>Ukazeme si takyto vektor zakresleny do suradnicovej sustavy:</p>
+<div class="jumbotron">
+    <img class="img-responsive center-block" src="images/eq1/vector_0_0_small.svg" alt="vector at coordinates (0,0)">
+</div>
+<p>Ak vektor posunieme hore o 2 jednotky <equation math="`y`"></equation>, tak sa nas vektor vobec nezmeni, jeho velkost aj smer ostava nezmeneny. Jedina vec, ktora sa udiala je, ze sa pohol. Zapis je nasledovny:</p>
+<div class="jumbotron">
+  <equation math="$$\vec{v}(0,2) = 5\hat{\imath} + 0\hat{\jmath} $$"></equation>
+</div>
+<p>Graficky:</p>
+<div class="jumbotron">
+    <img class="img-responsive center-block" src="images/eq1/vector_0_2_small.svg" alt="vector at coordinates (0,2)">
+</div>    
+<p>Ale co su tie zahadne <equation math="\(\hat{\imath}, \hat{\jmath}\)"></equation>? Su to takzvane jednotkove vektory. Vektor <equation math="\(\hat{\imath}\)"></equation> ma velkost rovnu 1 a smer v smere kladnej osi <equation math="\(x\)"></equation>. Jednotkovy vektor <equation math="\(\hat{\jmath}\)"></equation> ako si spravne uhadol mily citatel ma velkost 1 a ukazuje smerom ku kladnej osi <equation math="\(y\)"></equation>.</p>
+<p>Ukazme si znova nas vektor <equation math="\(\vec{v}\)"></equation> v bode <equation math="\((0,2)\)"></equation>zakrasleny do suradnicovej sustavy, ale tentoraz si vsimnite mrnave jednotkove vektory <equation math="\(\color{#ff0000}{\hat{\imath}}\)"></equation> a <equation math="\(\color{#00ff00}{\hat{\jmath}}\)"></equation>.</p>
+<div class="jumbotron">
+    <img class="img-responsive center-block" src="images/eq1/vector_ihat_jhat.svg" alt="vector at coordinates (0,2) with unit vectors i, j">
+</div>    
+<p> Teraz uz asi nemame problem s precitanim zapisu <equation math="\(\vec{v}(0,2) = 5\hat{\imath} + 0\hat{\jmath}\)"></equation>. Navod je jednoduchy, postavme sa do bodu <equation math="\((0,2)\)"></equation>, chodme <equation math="\(5\)"></equation> krokov v smere vektora <equation math="\(\hat{\imath}\)"></equation> a <equation math="\(0\)"></equation> krokov v smere vektora <equation math="\(\hat{\jmath}\)"></equation>. Ak nad tym porozmyslame takouto formou vieme rozlozit akykolvek vektor.</p>   
+
+<p>Skusme si prejst vektor popisany nasledovne:</p>
+<div class="jumbotron">
+    <equation math="$$\vec{v}(0,0) = 5\hat{\imath} + 5\hat{\jmath}$$"></equation>
+</div>
+<p>Cize sa postavime na startovaci bod <equation math="\((0,0)\)"></equation> a prejdeme <equation math="\(5\)"></equation> krokov s smere osi <equation math="\(x\)"></equation> a <equation math="\(5\)"></equation> nasledne z bodu kam sme dorazili v smere osi <equation math="\(y\)"></equation>. Vsimnime si, ze je jedno ci pojdeme najprv v smere osi <equation math="\(x\)"></equation>, alebo <equation math="\(y\)"></equation> skoncime v tom istom bode. Nas vysvledny vektor <equation math="\(\vec{v}\)"></equation> oznaceny modrym na obrazku potom nakreslime tak, ze z bodu <equation math="\((0,0)\)"></equation> potiahneme sipku do bodu <equation math="\((5,5)\)"></equation>.</p> 
+<div class="jumbotron">
+    <img class="img-responsive center-block" src="images/eq1/vector_45_degree.svg" alt="vector at coordinates (0,2) with unit vectors i, j">
+</div>    
+
+<p>Velkost takeho vektora uz samozrejme nie je <equation math="\(5\)"></equation> o com sa vieme presvedcit ak vektor <equation math="\(\vec{v}\)"></equation> otocime o <equation math="\(45^{\circ}\)"></equation> na os <equation math="\(x\)"></equation>. Je jasne, ze bude vacsi ako 5. Tak teda ako ho vypocitame? Nastastie mame vsetko dane, ak si pozrieme obrazok lepsie uvidime ze vektor <equation math="\(\hat{\imath}\)"></equation> a <equation math="\(\hat{\jmath}\)"></equation> su na seba stale kolme a vytvaraju vlastne dve odvesny pravouhleho trojuholnika. Tak velkost vektora <equation math="\(\vec{v}\)"></equation> vieme jednoducho vyratat nasledovne:</p>
+<div class="jumbotron">
+    <equation math="$$\mid\vec{v}\mid = \sqrt{5^{2} + 5^{2}} = 5\sqrt{2}$$"></equation>
+</div>
+<p>Pre uplnost dodam, ze jednotkovy vektor v smere osi <equation math="\(z\)"></equation> sa oznacuje <equation math="\(\hat{k}\)"></equation>.</p>
+<div class="alert alert-info">
+  <p>Pri vektoroch si treba vsimat ci <equation math="\(\rightarrow\)"></equation> je nad symbolom, alebo nie. Ak mame vektor <equation math="\(\vec{v}\)"></equation>, ale v texte sa vynecha sipka, tak sa mysli na jeho velkost. A tak mozeme zapisat, ze <equation math="\(\mid\vec{v}\mid=v\)"></equation>.</p>
+</div>
+
 <h2>Skalarny sucin dvoch vektorov</h2>
 <h2>Vektorovy tok</h2>
