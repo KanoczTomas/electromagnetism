@@ -10,15 +10,24 @@ svg {
   } 
 }
 
+#mainMenu.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
 
-
- body {
+#sidebar.affix {
+    position: fixed;
+    top: 80px;
+}
+ obody {
       position: relative;
   }
-  ul.nav-pills {
+ul.nav-pills {
       top: 80px;
       position: fixed;
-  }
+}
   /*div.col-sm-9 div {
     height: 250px;
     font-size: 28px;
@@ -26,7 +35,7 @@ svg {
   
   
   @media screen and (max-width: 810px) {
-    #section1, #section2, #section3, #section41, #section42  {
+    #section1, #section2, #section3, #section4, #section5, #section6  {
         margin-left: 150px;
     }
   }
