@@ -1,4 +1,7 @@
 (function () {
     'use strict';
-    var app = angular.module('tempo', ['ui.router']);
+    var app = angular.module('tempo', [
+        'ui.router',
+        'mgcrea.ngStrap'
+    ]);
 })();

@@ -11,8 +11,15 @@
             templateUrl: "templates/intro.html"
         })
         .state("eq1", {
-        url: "/eq1",
-        templateUrl: "templates/eq1.html"
+            url: "/eq1",
+            templateUrl: "templates/eq1.html",
+            controller: [ '$scope', '$location', '$anchorScroll', function ($scope, $location, $anchorScroll) {
+                $scope.goToAnchor = function (name){
+                    $location.hash(name);
+                    $anchorScroll();
+                }
+                
+            }]
         });
 
     }]);
