@@ -1,4 +1,4 @@
-(function(){
+(function () {
   var app = angular.module('tempo');
   app.directive('equation', function() {
     return {

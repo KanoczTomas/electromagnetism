@@ -1,3 +1,4 @@
-(function(){
-var app = angular.module('tempo', ['ui.router']);
+(function () {
+    'use strict';
+    var app = angular.module('tempo', ['ui.router']);
 })();
