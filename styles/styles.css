@@ -21,9 +21,10 @@ svg {
     position: fixed;
     top: 80px;
 }
- obody {
-      position: relative;
-  }
+body {
+/*    margin-top: 60px;*/
+/*    position: relative;*/
+}
 ul.nav-pills {
       top: 80px;
       position: fixed;
