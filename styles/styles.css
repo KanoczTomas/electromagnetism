@@ -5,9 +5,16 @@ svg {
 }
 
 @media only screen and (max-width : 767px) {
-  .same-height {
-    height: auto !important;
-  } 
+    .same-height {
+        height: auto !important;
+    }
+    #sidebar {
+        display: none; 
+        width: 0;
+    }
+    #eq-body{
+        width: auto !important;    
+    }
 }
 
 #mainMenu.affix {
