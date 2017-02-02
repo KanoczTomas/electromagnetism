@@ -8,12 +8,12 @@ svg {
     .same-height {
         height: auto !important;
     }
-    #sidebar {
+/*    #sidebar {
         display: none; 
         width: 0;
-    }
+    }*/
     #eq-body{
-        width: auto !important;    
+     /*   width: auto !important;    */
     }
 }
 
@@ -44,6 +44,6 @@ ul.nav-pills {
   
   @media screen and (max-width: 810px) {
     #section1, #section2, #section3, #section4, #section5, #section6  {
-        margin-left: 150px;
+/*        margin-left: 150px;*/
     }
   }
